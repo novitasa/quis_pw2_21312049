@@ -22,7 +22,11 @@
         $numbers = [18, 45, 29, 61, 47, 34];
         echo "array numbers: ";
         print_r($numbers);
-        // Lakukan Looping di sini
+        
+        echo "<br>";
+        echo "Array sisa baginya adalah:  "; 
+        print_r($rest);
+        echo "<br>";
 
         // output nya nanti seperti ini --> [3, 0, 4, 1, 2, 4]
 
@@ -55,6 +59,17 @@
         ];
         
         // Output: 
+        foreach ($items as $item) {
+            $itemAssoc = array(
+                'id' => $item[0],
+                'name' => $item[1],
+                'price' => $item[2],
+                'description' => $item[3],
+                'source' => $item[4]
+            );
+            print_r($itemAssoc);
+            echo "<br>";
+        }
 
     ?>
 
